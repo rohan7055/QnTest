@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/nav_drawer"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorWhite"
+    android:orientation="vertical" android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/close_drawer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_close"
+        android:tint="#00C8D7"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_user_dp"
+        android:src="@drawable/ic_user_default"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Shivam Nagi"
+        android:textColor="@color/colorText"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="265 Points"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_nav_item"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textColor="@color/colorTextDark"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_nav_item"
+                android:gravity="center_horizontal"
+                android:text="@string/my_profile"
+                android:textColor="@color/colorTextDark"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_nav_item"
+                android:gravity="center_horizontal"
+                android:text="@string/leaderboard"
+                android:textColor="@color/colorTextDark"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_nav_item"
+                android:gravity="center_horizontal"
+                android:text="@string/history"
+                android:textColor="@color/colorTextDark"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_settings"
+                android:tint="#A0A0A2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="@string/settings"
+                android:textColor="#A0A0A2"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A0A0A2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_logout"
+                android:tint="#A0A0A2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="@string/logout"
+                android:textColor="#A0A0A2"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

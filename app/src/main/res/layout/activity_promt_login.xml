@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.qntest.LoginPromtActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Hi."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito"
+            android:text="Let's get started"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorSecondary"
+            android:onClick="login"
+            android:text="@string/cont"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorSecondary"
+            android:onClick="home"
+            android:text="@string/home"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/colorSecondary"
+            android:onClick="question"
+            android:text="Question"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

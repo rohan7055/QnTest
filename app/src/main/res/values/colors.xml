@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0EADF4</color>
+    <color name="colorPrimaryDark">#4657B8</color>
+    <color name="colorSecondary">#34439e</color>
+    <color name="colorAccent">#F4511E</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorText">#3d3d3d</color>
+    <color name="colorTextDark">#1c1c1c</color>
+    <color name="colorTextDarkest">#191919</color>
+    <color name="testStart">#3A3D44</color>
+    <color name="testEnd">#3D4461</color>
+    <color name="testNav">#00D2DE</color>
+    <color name="testActive">#00CEE4</color>
+    <color name="testMain">#FAFAFA</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
